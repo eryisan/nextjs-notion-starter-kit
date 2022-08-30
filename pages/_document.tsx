@@ -63,6 +63,17 @@ export default class MyDocument extends Document {
             <Main />
 
             <NextScript />
+            <script async src='crisp.js' />
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMFX3JY73J"></script>
+            <script
+            dangerouslySetInnerHTML={{
+                  __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-GMFX3JY73J');
+            `}}
+            />
           </body>
         </Html>
       </IconContext.Provider>
