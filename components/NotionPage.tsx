@@ -158,7 +158,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const components = React.useMemo(
     () => ({
-      nextImage: Image,
       nextLink: Link,
       Code,
       Collection,
